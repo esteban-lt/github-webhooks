@@ -1,4 +1,5 @@
 import express, { Router } from 'express';
+import { GitHubSha256Middleware } from './middlewares/github-sha256-middleware';
 
 interface Options {
   port: number;
@@ -19,6 +20,7 @@ export class Server {
   public start() {
     this.app.use(express.json());
     this.app.use(express.urlencoded({ extended: true }));
+    this.app.use(GitHubSha256Middleware.verifyGithubSignature);
     this.app.use(this.routes);
 
     this.app.listen(this.port, () => {
