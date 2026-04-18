@@ -4,6 +4,7 @@
     "": {
       "name": "github-webhooks",
       "dependencies": {
+        "@netlify/edge-functions": "^3.0.6",
         "env-var": "^7.5.0",
         "express": "^5.2.1",
       },
@@ -17,6 +18,10 @@
     },
   },
   "packages": {
+    "@netlify/edge-functions": ["@netlify/edge-functions@3.0.6", "", { "dependencies": { "@netlify/types": "2.6.0" } }, "sha512-xkVcTcpAuQKAY5GXKOjPTIct5Mz53NPHXOasggA+LTAxDDV4ohqSM8BIaXh1SgbcniHZyFhBqhc5hxZ+fFz5bQ=="],
+
+    "@netlify/types": ["@netlify/types@2.6.0", "", {}, "sha512-yD20EizHJDQxajJ66Vo8RTwLwR2jMNVxufPG8MHd2AScX8jW4z0VPnnJHArq2GYPFTFZRHmiAhDrXr5m8zof6w=="],
+
     "@types/body-parser": ["@types/body-parser@1.19.6", "", { "dependencies": { "@types/connect": "*", "@types/node": "*" } }, "sha512-HLFeCYgz89uk22N5Qg3dvGvsv46B8GLvKKo1zKG4NybA8U2DiEO3w9lqGg29t/tfLRJpJ6iQxnVw4OnB7MoM9g=="],
 
     "@types/bun": ["@types/bun@1.3.12", "", { "dependencies": { "bun-types": "1.3.12" } }, "sha512-DBv81elK+/VSwXHDlnH3Qduw+KxkTIWi7TXkAeh24zpi5l0B2kUg9Ga3tb4nJaPcOFswflgi/yAvMVBPrxMB+A=="],

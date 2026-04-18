@@ -5,7 +5,8 @@
   "private": true,
   "scripts": {
     "dev": "bun --watch src/main.ts",
-    "start": "bun src/main.ts"
+    "start": "bun src/main.ts",
+    "netlify:dev": "netlify dev"
   },
   "devDependencies": {
     "@types/bun": "latest",
@@ -15,6 +16,7 @@
     "typescript": "^5"
   },
   "dependencies": {
+    "@netlify/edge-functions": "^3.0.6",
     "env-var": "^7.5.0",
     "express": "^5.2.1"
   }
